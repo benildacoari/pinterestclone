@@ -1,0 +1,145 @@
+/* .contenedor1{
+    display: grid;
+    gap: 2rem;
+    // grid-auto-rows: 60rem; 
+    grid-auto-columns: 30rem;
+    grid-template-rows: repeat(auto-fill,minmax(60rem,1fr));
+    // grid-template-columns: repeat(auto-fill,minmax(30rem,1fr)); 
+}
+*/
+
+#content {
+  max-width: 2000px;
+  margin: 130px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, 260px);
+  grid-auto-rows: 20px;
+  justify-content: center;	
+ }
+  
+ .altura0 { grid-row-end: auto; }
+ .altura1 { grid-row-end: span 8; }
+ .altura2 { grid-row-end: span 9; }
+ .altura3 { grid-row-end: span 10; }
+ .altura4 { grid-row-end: span 11; }
+ .altura5 { grid-row-end: span 12; }
+ .altura6 { grid-row-end: span 13; }
+ .altura7 { grid-row-end: span 14; }
+ .altura8 { grid-row-end: span 15; }
+ .altura9 { grid-row-end: span 16; }
+ .altura10{ grid-row-end: span 17; }
+ .altura11{ grid-row-end: span 18; }
+ .altura12{ grid-row-end: span 19; }
+ .altura13{ grid-row-end: span 20; }
+ .altura14{ grid-row-end: span 21; }
+
+#content > * img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+#content > * p {
+  font-size: medium;
+  padding-left: 5px;
+  font-family: 'Archivo', sans-serif;
+  color: rgb(31, 30, 30);
+}
+
+/* estilos del nav*/
+
+#navbar-pinterest{
+  display: flex;
+  position: fixed;
+  top: 0;
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  align-items: center;
+}
+
+.finder{
+  flex: 1;
+  border-style: solid;
+  border-radius: 30px;
+  border-color: rgb(150, 183, 226);
+  border-width: thick;
+  padding: 20px 10px;
+  margin: 15px 0;
+  outline: none;
+}
+
+.buscador{
+  display: none;
+}
+
+@media (max-width: 630px) {
+  .finder {
+    display: none;
+  }
+  .buscador{
+    display:block;
+  }
+}
+
+.finder:focus{
+  background: rgb(230, 230, 230);
+}
+
+.menu-item:hover{
+  background: rgb(230, 230, 230);
+
+}
+
+.menu-item:active{
+  background-color: rgb(27, 27, 27);
+  color: white;
+}
+
+.menu-item{
+  display: flex;
+  border-radius: 30px;
+  padding: 0 10px;
+  text-decoration: none;
+  font-family: 'Archivo', sans-serif;
+  font-size: large;
+  align-items: center;
+}
+
+.nav-texto{
+  padding: 0 4px;
+}
+
+/* Estilos de logos*/
+.arrow{
+  width: 15px;
+  height: 55px;
+}
+
+.logo{
+  width: 40px;
+  height: 50px;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.logo2{
+  width: 30px;
+  height: 40px;
+  align-items: center;
+}
+
+.logo3{
+  width: 34px;
+  height: 34px;
+  align-items: center;
+}
+
+/*zoom de la imagen*/
+
+.imagen1:hover{
+  
+  filter: brightness(50%);
+  /* filter: opacity(0.6); */
+}
